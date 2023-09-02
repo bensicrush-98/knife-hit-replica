@@ -16,11 +16,11 @@ public class GameUI : MonoBehaviour
     [SerializeField]
     private Color usedKnifeIconColor;
 
-    private void DisplayRestartButton(){
+    public void DisplayRestartButton(){
         restartButton.SetActive(true);
     }
 
-    private void SetInitialDisplayKnifeCount(int count){
+    public void SetInitialDisplayKnifeCount(int count){
         for (int i = 0; i < count; i++)
         {
             Instantiate(iconKnife, panelKnifes.transform);
