@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 784609028}
   - component: {fileID: 784609030}
   - component: {fileID: 784609029}
+  - component: {fileID: 784609031}
   m_Layer: 0
   m_Name: LogMotor
   m_TagString: Untagged
@@ -402,6 +403,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &784609031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784609027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3101135861bfe43648c3cf0875ba264c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationPattern:
+  - speed: 250
+    duration: 2
+  - speed: -300
+    duration: 4
+  - speed: 100
+    duration: 2
+  - speed: 500
+    duration: 3
+  - speed: -300
+    duration: 2
+  - speed: 100
+    duration: 1
+  - speed: 350
+    duration: 1.5
 --- !u!1 &849948544
 GameObject:
   m_ObjectHideFlags: 0
