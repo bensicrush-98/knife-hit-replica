@@ -24,11 +24,9 @@ public class KnifeScript : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision){
-        Debug.Log("here i am");
         if (!isActive) return;
         isActive = false;
         if(collision.collider.tag == "Log"){
-            Debug.Log("hjello");
             rb.velocity = new Vector2(0, 0);
             rb.bodyType = RigidbodyType2D.Kinematic;
             this.transform.SetParent(collision.collider.transform);
