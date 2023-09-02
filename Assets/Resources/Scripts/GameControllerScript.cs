@@ -32,7 +32,7 @@ public class GameControllerScript : MonoBehaviour
         if(knifeCount > 0){
             SpawnKnife();
         } else {
-            StartGameOverSequence();
+            StartGameOverSequence(false);
         }
     }
 
