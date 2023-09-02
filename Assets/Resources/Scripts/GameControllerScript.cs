@@ -30,7 +30,7 @@ public class GameControllerScript : MonoBehaviour
 
     private void OnSuccessfullKnifeHit(){
         if(knifeCount > 0){
-            SpawnKnife()
+            SpawnKnife();
         } else {
             StartGameOverSequence();
         }
