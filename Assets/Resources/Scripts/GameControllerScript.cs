@@ -28,11 +28,11 @@ public class GameControllerScript : MonoBehaviour
         SpawnKnife();
     }
 
-    private void OnSuccessfullKnifeHit(){
+    public void OnSuccessfullKnifeHit(){
         if(knifeCount > 0){
             SpawnKnife();
         } else {
-            StartGameOverSequence(false);
+            StartGameOverSequence(true);
         }
     }
 
@@ -48,6 +48,7 @@ public class GameControllerScript : MonoBehaviour
     private IEnumerator GameOverSequenceCoroutine(bool win){
         if(win){
             yield return new WaitForSecondsRealtime(0.3f);
+            RestartGame();
         }else{
             GameUI.DisplayRestartButton();
         }
