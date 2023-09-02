@@ -37,8 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Resources/Scripts/LogRotationScript.cs" />
-     <Compile Include="Assets/Resources/Scripts/GameUI.cs" />
-     <Compile Include="Assets/Resources/Scripts/GameControllerScript.cs" />
+     <Compile Include="Assets/Resources/Scripts/KnifeScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
